@@ -1,0 +1,5 @@
+package com.parsch;
+
+public enum Card {
+
+}
