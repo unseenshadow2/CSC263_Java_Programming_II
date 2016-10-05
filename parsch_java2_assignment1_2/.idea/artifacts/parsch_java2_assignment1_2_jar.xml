@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="parsch_java2_assignment1_2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/parsch_java2_assignment1_2_jar</output-path>
+    <root id="archive" name="parsch_java2_assignment1_2.jar">
+      <element id="module-output" name="parsch_java2_assignment1_2" />
+    </root>
+  </artifact>
+</component>

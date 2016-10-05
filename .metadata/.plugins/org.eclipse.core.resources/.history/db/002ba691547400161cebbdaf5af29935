@@ -1,8 +1,0 @@
-package com.parsch;
-
-public enum Card {};
-
-public class DeckManager 
-{
-
-}
