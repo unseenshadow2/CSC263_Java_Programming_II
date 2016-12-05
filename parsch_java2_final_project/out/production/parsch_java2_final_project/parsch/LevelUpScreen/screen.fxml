@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="parsch.LevelUpScreen.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="btnDone" layoutX="930.0" layoutY="755.0" mnemonicParsing="false" onAction="#DoneButtonClick" text="Done" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="33.0" prefHeight="21.0" prefWidth="1000.0" text="LEVEL UP!!!" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="14.0" layoutY="99.0" prefWidth="290.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="42.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="158.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnMaxHealthLvl" mnemonicParsing="false" onAction="#MaxHealthLvlClick" text="Level Up" GridPane.columnIndex="2" />
+                  <Label text="Max Health:" />
+                  <Label text="Attack:" GridPane.rowIndex="1" />
+                  <Label text="Defense" GridPane.rowIndex="2" />
+                  <Label text="Speed" GridPane.rowIndex="3" />
+                  <Button fx:id="btnAttackLvl" mnemonicParsing="false" onAction="#AttackLvlClick" text="Level Up" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="btnDefenseLvl" mnemonicParsing="false" onAction="#DefenseLvlClick" text="Level Up" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button fx:id="btnSpeedLvl" mnemonicParsing="false" onAction="#SpeedLvlClick" text="Level Up" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label fx:id="lblMaxHealth" text="0" GridPane.columnIndex="1" />
+                  <Label fx:id="lblAttack" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="lblDefense" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="lblSpeed" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

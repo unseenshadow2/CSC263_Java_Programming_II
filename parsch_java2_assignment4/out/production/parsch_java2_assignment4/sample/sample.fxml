@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane fx:id="btnCalaculate" alignment="center" hgap="10" prefHeight="47.0" prefWidth="535.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="31.0" minHeight="31.0" prefHeight="31.0" />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+       <Label text="City 1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+       <TextField fx:id="txtCity1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+       <Label text="City 2" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+       <TextField fx:id="txtCity2" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+       <Button mnemonicParsing="false" text="Calculate and Draw Distance" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

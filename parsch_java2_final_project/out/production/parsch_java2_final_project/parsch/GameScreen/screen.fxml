@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parsch.GameScreen.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="800.0" prefWidth="1000.0">
+         <children>
+            <Pane layoutX="15.0" layoutY="15.0" prefHeight="750.0" prefWidth="450.0" style="-fx-background-color: Silver;">
+               <children>
+                  <Label alignment="CENTER" layoutY="15.0" prefHeight="21.0" prefWidth="450.0" text="Player" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="25.0" layoutY="50.0" prefWidth="400.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Stat" textAlignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="140.0" text="Value" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="140.0" text="Weapon Bonus" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Health" textAlignment="CENTER" GridPane.rowIndex="1" />
+                        <Label fx:id="txtHealthValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="txtHealthWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Attack" textAlignment="CENTER" GridPane.rowIndex="2" />
+                        <Label fx:id="txtAttackValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="txtAttackWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Defense" textAlignment="CENTER" GridPane.rowIndex="3" />
+                        <Label fx:id="txtDefenseValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="txtDefenseWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Stat" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Speed" textAlignment="CENTER" GridPane.rowIndex="4" />
+                        <Label fx:id="txtSpeedValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="txtSpeedWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="25.0" layoutY="224.0" prefHeight="21.0" prefWidth="124.0" text="Current Weapon:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtCurrentWeapon" layoutX="166.0" layoutY="224.0" prefHeight="21.0" prefWidth="270.0" text="Sword And Shield" />
+                  <Button fx:id="btnAttack" disable="true" layoutX="25.0" layoutY="275.0" mnemonicParsing="false" onAction="#PlayerAttack" text="Attack" />
+                  <Button fx:id="btnDefend" disable="true" layoutX="118.0" layoutY="275.0" mnemonicParsing="false" onAction="#PlayerDefend" text="Defend" />
+                  <Button fx:id="btnFlee" disable="true" layoutX="225.0" layoutY="275.0" mnemonicParsing="false" onAction="#PlayerFlee" text="Flee" />
+               </children>
+            </Pane>
+            <Pane layoutX="530.0" layoutY="15.0" prefHeight="750.0" prefWidth="450.0" style="-fx-background-color: Silver;">
+               <children>
+                  <Label fx:id="txtEnemyTitle" alignment="CENTER" layoutY="15.0" prefHeight="21.0" prefWidth="450.0" text="Enemy" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="25.0" layoutY="50.0" prefWidth="400.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Stat" textAlignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="140.0" text="Value" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="21.0" prefWidth="140.0" text="Weapon Bonus" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Health" textAlignment="CENTER" GridPane.rowIndex="1" />
+                        <Label fx:id="txtEnemyHealthValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="txtEnemyHealthWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Attack" textAlignment="CENTER" GridPane.rowIndex="2" />
+                        <Label fx:id="txtEnemyAttackValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="txtEnemyAttackWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Defense" textAlignment="CENTER" GridPane.rowIndex="3" />
+                        <Label fx:id="txtEnemyDefenseValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="txtEnemyDefenseWB" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="140.0" text="Stat" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="25.0" layoutY="170.0" prefHeight="21.0" prefWidth="124.0" text="Current Weapon:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtEnemyCurrentWeapon" layoutX="155.0" layoutY="170.0" prefHeight="21.0" prefWidth="270.0" text="Sword And Shield" />
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="219.0" prefHeight="21.0" prefWidth="400.0" text="Description">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtEnemyDescription" alignment="TOP_LEFT" layoutX="25.0" layoutY="240.0" prefHeight="494.0" prefWidth="400.0" wrapText="true" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

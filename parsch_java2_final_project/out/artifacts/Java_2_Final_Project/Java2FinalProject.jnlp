@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Java2FinalProject.jnlp">
+  <information>
+    <title>Java 2 Final Project</title>
+    <vendor>Unknown</vendor>
+    <description>Java 2 Final Project</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Java2FinalProject.jar" size="28072" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1000" height="800" main-class="parsch.Main"  name="Java 2 Final Project" />
+  <update check="background"/>
+</jnlp>

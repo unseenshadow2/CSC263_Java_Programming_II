@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="Java 2 Final Project">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_2_Final_Project</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="parsch.Main" />
+        <option name="description" value="" />
+        <option name="height" value="800" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Java 2 Final Project" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="1000" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Java2FinalProject.jar">
+        <element id="module-output" name="parsch_java2_final_project" />
+      </element>
+    </root>
+  </artifact>
+</component>

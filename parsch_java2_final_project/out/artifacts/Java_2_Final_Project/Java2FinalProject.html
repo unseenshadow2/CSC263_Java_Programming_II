@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Java2FinalProject.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedJava2FinalProject_id() {
+        dtjava.embed(
+            {
+                id : 'Java2FinalProject_id',
+                url : 'Java2FinalProject.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '1000',
+                height : '800'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedJava2FinalProject_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>Java 2 Final Project</b></h2>
+  <b>Webstart:</b> <a href='Java2FinalProject.jnlp' onclick="return launchApplication('Java2FinalProject.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
